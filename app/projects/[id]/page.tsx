@@ -7,7 +7,8 @@ import {
   Calendar, 
   Tag, 
   Github, 
-  CheckCircle2
+  CheckCircle2,
+  FolderOpen
 } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -84,13 +85,13 @@ export default function ProjectDetail({ params }: { params: Promise<{ id: string
               Repository
             </span>
             <a
-              href={project.githubUrl}
+              href={project.githubUrl || project.folder}
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center gap-2 bg-[#0F172A] text-white py-2 px-4 rounded-lg text-sm font-bold hover:bg-slate-800 transition-colors w-full md:w-auto"
             >
-              <Github size={16} />
-              View on GitHub
+              {project.githubUrl ? <Github size={16} /> : <FolderOpen size={16} />}
+              {project.githubUrl ? "View on GitHub" : "View  Folder"}
             </a>
           </div>
         </div>

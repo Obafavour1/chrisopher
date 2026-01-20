@@ -20,15 +20,32 @@ const Contact = () => {
     });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Simulate API call
     setStatus('sending');
-    setTimeout(() => {
-      setStatus('success');
-      setFormData({ name: '', email: '', subject: '', message: '' });
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        setStatus('success');
+        setFormData({ name: '', email: '', subject: '', message: '' });
+        setTimeout(() => setStatus(''), 5000);
+      } else {
+        setStatus('error');
+        setTimeout(() => setStatus(''), 5000);
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      setStatus('error');
       setTimeout(() => setStatus(''), 5000);
-    }, 1500);
+    }
   };
 
   return (
@@ -45,8 +62,8 @@ const Contact = () => {
       </div>
 
       {/* Main Content */}
-      <div className="max-w-7xl mt-10 mx-auto px-4 sm:px-6 lg:px-8 -mt-8 pb-20">
-        <div className="bg-white rounded-xl p-8 md:p-12">
+      <div className="md:max-w-7xl mt-10 mx-auto px-4 md:px-6 lg:px-8 -mt-8 pb-20">
+        <div className="bg-white rounded-xl p-2 md:p-12">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
             
             {/* Left Column: Contact Info */}
@@ -118,7 +135,7 @@ const Contact = () => {
 
             {/* Right Column: Contact Form */}
             <div className="lg:col-span-8">
-              <div className="bg-slate-50/50 rounded-2xl border border-gray-100 p-6 md:p-8">
+              <div className="bg-slate-50/50 rounded-2xl border border-gray-100 p-4 md:p-8">
                 <h3 className="text-2xl font-bold text-gray-900 mb-8">Send me a message</h3>
                 
                 <form onSubmit={handleSubmit} className="space-y-6">
@@ -197,17 +214,24 @@ const Contact = () => {
                       <p className="text-green-700 text-center font-medium">Message sent successfully! I&apos;ll get back to you soon.</p>
                     </div>
                   )}
+                  {status === 'error' && (
+                    <div className="p-4 bg-red-50 border border-red-200 rounded-lg animate-fade-in">
+                      <p className="text-red-700 text-center font-medium">Failed to send message. Please try again later.</p>
+                    </div>
+                  )}
                 </form>
               </div>
-            </div>
-          </div>
 
-          {/* Bottom Note */}
-          <div className="mt-12 bg-blue-50/50 border border-blue-100 rounded-lg p-4">
+              <div className="mt-12 w-full bg-blue-50/50 border border-blue-100 rounded-lg p-4">
             <p className="text-sm text-blue-800">
               <span className="font-bold">Note:</span> I typically respond to inquiries within 24-48 hours. Please ensure your email address is correct for a timely response.
             </p>
           </div>
+            </div>
+          
+          </div>
+
+          
         </div>
       </div>
     </section>

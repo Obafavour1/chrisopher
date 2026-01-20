@@ -1,7 +1,7 @@
 "use client";
 
-import React, { useState, useMemo } from 'react';
-import { Filter, ChevronDown, Github, ArrowRight } from 'lucide-react';
+import { useState, useMemo } from 'react';
+import { Filter, ChevronDown, Github, ArrowRight, FolderOpen } from 'lucide-react';
 import { projects } from '@/constants/projects';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -145,7 +145,9 @@ const ProjectInterface = () => {
                   className="p-2.5 rounded-lg border border-gray-200 text-gray-600 hover:bg-gray-50 hover:text-gray-900 transition-all"
                   title="View on GitHub"
                 >
-                  <Github size={20} />
+                  {project.githubUrl ? <Github size={20} /> : <FolderOpen size={20} />}
+                 
+                  
                 </a>
               </div>
             </div>
