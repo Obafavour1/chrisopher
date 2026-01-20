@@ -1,6 +1,7 @@
 "use client";
 
 import { Award, Check } from "lucide-react";
+import Link from "next/link";
 
 const ExpertiseSection = () => {
   const certifications = [
@@ -88,8 +89,8 @@ const ExpertiseSection = () => {
             <p className="text-teal-50/80 mb-8 text-lg max-w-xl mx-auto">
               I&apos;m always open to new projects and collaborations.
             </p>
-            <button className="bg-white text-[#0f766e] px-8 py-3 rounded-lg font-bold hover:bg-teal-50 transition-colors">
-              Contact Me
+            <button >
+              <Link href="contact" className="bg-white text-[#0f766e] px-8 py-3 rounded-lg font-bold hover:bg-teal-50 transition-colors">Contact Me</Link>
             </button>
           </div>
           {/* Subtle decoration */}

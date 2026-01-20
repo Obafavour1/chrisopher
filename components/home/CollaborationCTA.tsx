@@ -24,7 +24,7 @@ const CollaborationCTA = () => {
           
           {/* CTA Button */}
           <Link 
-            href="#contact"
+            href="/contact"
             className="inline-flex items-center px-6 sm:px-8 py-3 sm:py-4 bg-teal-500 hover:bg-teal-600 text-white font-semibold rounded-lg transition-all duration-300 transform hover:scale-101 shadow-md hover:shadow-teal-500/50"
           >
             Contact Me

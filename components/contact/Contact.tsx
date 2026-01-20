@@ -154,7 +154,7 @@ const Contact = () => {
                         onChange={handleChange}
                         required
                         placeholder="John Doe"
-                        className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-teal-500/20 focus:border-teal-500 transition-all bg-white"
+                        className="w-full px-4 py-3 text-black rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-teal-500/20 focus:border-teal-500 transition-all bg-white"
                       />
                     </div>
                     {/* Email */}
@@ -167,7 +167,7 @@ const Contact = () => {
                         onChange={handleChange}
                         required
                         placeholder="john@example.com"
-                        className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-teal-500/20 focus:border-teal-500 transition-all bg-white"
+                        className="w-full px-4 py-3 text-black rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-teal-500/20 focus:border-teal-500 transition-all bg-white"
                       />
                     </div>
                   </div>
@@ -182,7 +182,7 @@ const Contact = () => {
                       onChange={handleChange}
                       required
                       placeholder="Project Inquiry"
-                      className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-teal-500/20 focus:border-teal-500 transition-all bg-white"
+                      className="w-full px-4 py-3 text-black rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-teal-500/20 focus:border-teal-500 transition-all bg-white"
                     />
                   </div>
 
@@ -196,7 +196,7 @@ const Contact = () => {
                       onChange={handleChange}
                       required
                       placeholder="Tell me about your project or inquiry..."
-                      className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-teal-500/20 focus:border-teal-500 transition-all bg-white resize-none"
+                      className="w-full px-4 py-3 text-black rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-teal-500/20 focus:border-teal-500 transition-all bg-white resize-none"
                     ></textarea>
                   </div>
 
