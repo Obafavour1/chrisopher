@@ -5,24 +5,26 @@ import Link from "next/link";
 
 const ExpertiseSection = () => {
   const certifications = [
-    "Python for Data Science",
-    "ASPEN Plus Advanced User",
-    "Process Safety Management",
-    "Six Sigma Green Belt",
+    "PRO II (FCC Project IFP School)",
+    "Aspen HYSYS",
+    "AutoCAD Design (progressive learning)",
+    "LCA (SIMAPRO - IFP School)",
   ];
 
-  const programmingSkills = [
-    "Python (NumPy, SciPy, Pandas, Matplotlib)",
+  const technicalSkills = [
+    "PRO II (FCC Project IFP School)",
+    "Aspen HYSYS",
+    "AutoCAD Design (progressive learning)",
+    "Basic Python and PowerPoint",
     "MATLAB & Simulink",
-    "VBA for Excel automation",
-    "SQL & Database management",
+    "LCA (SIMAPRO - IFP School)",
   ];
 
-  const engineeringSoftware = [
-    "ASPEN Plus & HYSYS",
-    "Computational Fluid Dynamics (CFD)",
-    "Process Optimization Tools",
-    "Data visualization tools",
+  const softSkills = [
+    "Great verbal and written communication",
+    "Interpersonal Skills",
+    "Project management",
+    "Flexibility",
   ];
 
   return (
@@ -54,11 +56,11 @@ const ExpertiseSection = () => {
           <h2 className="text-3xl font-bold text-[#0f172a] mb-12">Technical Expertise</h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
-            {/* Programming */}
+            {/* Technical Skills */}
             <div>
-              <h3 className="text-xl font-bold text-[#0f172a] mb-6">Programming & Scripting</h3>
+              <h3 className="text-xl font-bold text-[#0f172a] mb-6">Technical Skills</h3>
               <ul className="space-y-4">
-                {programmingSkills.map((skill, index) => (
+                {technicalSkills.map((skill, index) => (
                   <li key={index} className="flex items-center gap-3 text-slate-500">
                     <Check className="w-5 h-5 text-[#0d9488]" />
                     <span>{skill}</span>
@@ -67,14 +69,14 @@ const ExpertiseSection = () => {
               </ul>
             </div>
 
-            {/* Engineering Software */}
+            {/* Soft Skills */}
             <div>
-              <h3 className="text-xl font-bold text-[#0f172a] mb-6">Engineering Software</h3>
+              <h3 className="text-xl font-bold text-[#0f172a] mb-6">Soft Skills</h3>
               <ul className="space-y-4">
-                {engineeringSoftware.map((software, index) => (
+                {softSkills.map((skill, index) => (
                   <li key={index} className="flex items-center gap-3 text-slate-500">
                     <Check className="w-5 h-5 text-[#0d9488]" />
-                    <span>{software}</span>
+                    <span>{skill}</span>
                   </li>
                 ))}
               </ul>

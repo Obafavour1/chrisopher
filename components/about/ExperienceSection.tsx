@@ -5,35 +5,59 @@ import { Briefcase, GraduationCap } from "lucide-react";
 const ExperienceSection = () => {
   const experiences = [
     {
-      title: "Senior Process Engineer",
-      period: "2022 - Present",
+      title: "Process Engineer Research Intern",
+      company: "CP2M Lyon",
+      period: "Oct. 2025 - Present",
       bullets: [
-        "Developed Python-based process simulation models using ASPEN Plus",
-        "Implemented optimization algorithms reducing operational costs by 15%",
-        "Led automation initiatives improving production efficiency",
+        "Investigating catalyst breakup during high-pressure ethylene polymerization using Ziegler-Natta and metallocene catalysts",
+        "Conducting gas and slurry phase polymerization; analyzing polymer morphology with SEM, DSC, NMR, and HT-SEC",
+        "Exploring the influence of process conditions on catalyst behavior and polyolefine properties",
       ],
     },
     {
-      title: "Process Engineer",
-      period: "2019 - 2022",
+      title: "Research Assistant/Process Engineer",
+      company: "Bioresources Valorization Lab",
+      period: "Aug. 2023 - July 2024",
       bullets: [
-        "Designed and validated process control systems using MATLAB",
-        "Created data analysis dashboards for real-time monitoring",
-        "Mentored junior engineers in programming best practices",
+        "Collaborated with multidisciplinary teams to assess process efficiency, environmental impact, and economics for industrial application",
+        "Conducted literature reviews and technical analysis focused on low-carbon and renewable process technologies, including bio-based feedstocks and sustainable catalyst systems",
+      ],
+    },
+    {
+      title: "Process Engineer Trainee",
+      company: "Polypropylene Unit, Warri Refining and Petrochemicals Company (WRPC)",
+      period: "Sept. 2019 - Feb. 2021",
+      bullets: [
+        "Supported optimization of polypropylene production parameters, contributing to improved product quality and process efficiency",
+        "Assisted in troubleshooting polymerization and purification operations, reducing downtime during critical plant activities",
+      ],
+    },
+    {
+      title: "Quality Control and Assurance Intern",
+      company: "JC Udeozor Global Industries Limited",
+      period: "July 2019 - Sept 2019",
+      bullets: [
+        "Carried out experimental analysis on the raw materials used in the production of medicated balm ointment and inhaler",
+        "The analysis carried out include acid value, density, menthol content, amongst many others",
+        "Active in process HAZOP, HAZID and PHA to ensure safe operations",
       ],
     },
   ];
 
   const education = [
     {
-      degree: "M.S. Chemical Engineering",
-      university: "University Name",
-      specialization: "Specialization in Process Optimization & Simulation",
+      degree: "MSc. Processes and Polymers Engineering",
+      university: "IFP School (Ecole Nationale Supérieure du Pétrole et des Moteurs)",
+      location: "Rueil-Malmaison, France",
+      period: "2024/2025",
+      specialization: "",
     },
     {
-      degree: "B.S. Chemical Engineering",
-      university: "University Name",
-      specialization: "Graduated with Honors",
+      degree: "Bachelor of Engineering (B.Eng.) in Chemical Engineering",
+      university: "University of Benin",
+      location: "Benin City, Nigeria",
+      period: "2015 - 2020",
+      specialization: "First Class Honors",
     },
   ];
 
@@ -56,6 +80,7 @@ const ExperienceSection = () => {
                 <div className="absolute -left-[41px] top-1.5 w-4 h-4 bg-white border-2 border-[#0d9488] rounded-full z-10" />
                 
                 <h3 className="text-xl font-bold text-[#0f172a] mb-1">{exp.title}</h3>
+                <p className="text-[#0d9488] font-medium text-sm mb-1">{exp.company}</p>
                 <p className="text-slate-400 text-sm mb-4">{exp.period}</p>
                 <ul className="space-y-2">
                   {exp.bullets.map((bullet, idx) => (
@@ -87,7 +112,11 @@ const ExperienceSection = () => {
                 
                 <h3 className="text-xl font-bold text-[#0f172a] mb-1">{edu.degree}</h3>
                 <p className="text-[#0d9488] font-medium text-sm mb-1">{edu.university}</p>
-                <p className="text-slate-500 text-sm italic">{edu.specialization}</p>
+                <p className="text-slate-500 text-sm mb-1">{edu.location}</p>
+                <p className="text-slate-400 text-sm mb-1">{edu.period}</p>
+                {edu.specialization && (
+                  <p className="text-slate-500 text-sm italic">{edu.specialization}</p>
+                )}
               </div>
             ))}
           </div>

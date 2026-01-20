@@ -23,8 +23,8 @@ const Footer = () => {
     connect: {
       title: "Connect",
       links: [
-        { name: "GitHub", href: "https://github.com" },
-        { name: "LinkedIn", href: "https://linkedin.com" },
+        { name: "GitHub", href: "https://github.com/ChrisAbuga" },
+        { name: "LinkedIn", href: "https://www.linkedin.com/in/emmanuelabuga" },
         { name: "Email", href: "mailto:em.abugaofficial@gmail.com" }
       ]
     }

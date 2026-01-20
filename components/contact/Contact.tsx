@@ -116,19 +116,21 @@ const Contact = () => {
                 <h3 className="text-xl font-bold text-gray-900 mb-6">Connect With Me</h3>
                 <div className="flex space-x-4">
                   <Link 
-                    href="#" 
+                    href="https://github.com/ChrisAbuga" 
+                    target="_blank"
                     className="w-12 h-12 flex items-center justify-center rounded-lg border border-gray-200 bg-gray-50 hover:bg-gray-100 transition-colors"
                   >
                     <Github className="w-5 h-5 text-gray-700" />
                   </Link>
                   <Link 
-                    href="#" 
+                    href="https://www.linkedin.com/in/emmanuelabuga" 
+                    target="_blank"
                     className="w-12 h-12 flex items-center justify-center rounded-lg border border-gray-200 bg-gray-50 hover:bg-gray-100 transition-colors"
                   >
                     <Linkedin className="w-5 h-5 text-gray-700" />
                   </Link>
                   <Link 
-                    href="#" 
+                    href="mailto:em.abugaofficial@gmail.com" 
                     className="w-12 h-12 flex items-center justify-center rounded-lg border border-gray-200 bg-gray-50 hover:bg-gray-100 transition-colors"
                   >
                     <Mail className="w-5 h-5 text-gray-700" />
