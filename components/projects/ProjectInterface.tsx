@@ -6,7 +6,7 @@ import { projects } from '@/constants/projects';
 import Link from 'next/link';
 import Image from 'next/image';
 
-const categories = ["All Projects", "Process Simulation", "Data Analysis", "Optimization", "Modeling", "Automation"];
+const categories = ["All Projects", "Process Design & Engineering", "Energy Optimization", "Distillation & Separation Processes", "Process Engineering & P&ID Design", "Process Simulation & Computational Modeling"];
 
 const ProjectInterface = () => {
   const [activeCategory, setActiveCategory] = useState("All Projects");
@@ -86,10 +86,10 @@ const ProjectInterface = () => {
         {filteredProjects.map((project) => (
           <div
             key={project.id}
-            className="group bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-1"
+            className="group bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-1 flex flex-col"
           >
             {/* Image Container */}
-            <div className="relative h-56 w-full overflow-hidden bg-gray-200">
+            <div className="relative h-56 w-full overflow-hidden bg-gray-200 flex-shrink-0">
               <Image
                 src={project.image}
                 alt={project.title}
@@ -104,7 +104,7 @@ const ProjectInterface = () => {
             </div>
 
             {/* Content Container */}
-            <div className="p-6">
+            <div className="p-6 flex flex-col flex-grow">
               <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors">
                 {project.title}
               </h3>
@@ -130,7 +130,7 @@ const ProjectInterface = () => {
               </div>
 
               {/* Actions */}
-              <div className="flex items-center gap-3">
+              <div className="flex items-center gap-3 mt-auto">
                 <Link
                   href={`/projects/${project.id}`}
                   className="flex-1 bg-[#0F172A] text-white py-2.5 rounded-lg text-sm font-bold flex items-center justify-center gap-2 hover:bg-slate-800 transition-colors group/btn"

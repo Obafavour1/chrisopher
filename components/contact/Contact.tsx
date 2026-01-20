@@ -24,6 +24,8 @@ const Contact = () => {
     e.preventDefault();
     setStatus('sending');
 
+    console.log(formData)
+
     try {
       const response = await fetch('/api/contact', {
         method: 'POST',
@@ -32,6 +34,8 @@ const Contact = () => {
         },
         body: JSON.stringify(formData),
       });
+
+      console.log(response)
 
       if (response.ok) {
         setStatus('success');
