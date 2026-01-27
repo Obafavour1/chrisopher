@@ -6,7 +6,7 @@ import { projects } from '@/constants/projects';
 import Link from 'next/link';
 import Image from 'next/image';
 
-const categories = ["All Projects", "Process Design & Engineering", "Energy Optimization", "Distillation & Separation Processes", "Process Engineering & P&ID Design", "Process Simulation & Computational Modeling"];
+const categories = ["All Projects", "Process Design & Engineering", "Energy Optimization", "Distillation & Separation Processes", "Process Engineering & P&ID Design", " Computational Modeling"];
 
 const ProjectInterface = () => {
   const [activeCategory, setActiveCategory] = useState("All Projects");
@@ -114,7 +114,7 @@ const ProjectInterface = () => {
 
               {/* Tags */}
               <div className="flex flex-wrap gap-2 mb-6">
-                {project.technologies.slice(0, 3).map((tech) => (
+                {project.tags.slice(0, 3).map((tech) => (
                   <span
                     key={tech}
                     className="text-[10px] uppercase tracking-wider font-bold text-emerald-600 bg-emerald-50 px-2 py-1 rounded"
@@ -122,9 +122,9 @@ const ProjectInterface = () => {
                     {tech}
                   </span>
                 ))}
-                {project.technologies.length > 3 && (
+                {project.tags.length > 3 && (
                   <span className="text-[10px] uppercase tracking-wider font-bold text-gray-400 bg-gray-50 px-2 py-1 rounded">
-                    +{project.technologies.length - 3}
+                    +{project.tags.length - 3}
                   </span>
                 )}
               </div>

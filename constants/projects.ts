@@ -79,7 +79,8 @@ export const projects: Project[] = [
   "date": "February 2025",
   "technologies": [
     "AutoCAD",
-    "3D Plant Layout / Piping CAD Tools",
+    "3D Plant Layout ",
+    "Piping CAD Tools",
     "Excel",
     "EPC Engineering Standards",
     "ICSS Design Principles",
@@ -232,12 +233,12 @@ export const projects: Project[] = [
   "category": "Distillation & Separation Processes",
   "date": "2024",
   "technologies": [
-    "PRO/II(rigorous distillation simulation)",
+    "PRO/II (Rigorous distillation simulation)",
     "SRK Equation of State",
     "Shortcut Distillation Methods (Fenske / Underwood concepts)",
-    "Excel(material balance, tray efficiency, hydraulics, cost estimation)",
+    "Excel (Material balance, tray efficiency, hydraulics, cost estimation)",
     "O’Connell Tray Efficiency Correlation",
-    "Process Economics (CAPEX / OPEX evaluation"
+    "Process Economics (CAPEX / OPEX evaluation)"
   ],
   "tags": [
     "Distillation Design",
@@ -314,7 +315,13 @@ export const projects: Project[] = [
     "Excel",
     "ASME Standards",
     "Nelson Curves",
-    "Corrosion Allowance Methodology"
+    "Corrosion Allowance Methodology",
+    "AutoCAD",
+    "3D Plant Layout",
+    "EPC Engineering Standards",
+    "ICSS Design Principles",
+    "SPMT Transport Engineering",
+    "Structural & Foundation Design Methods"
   ],
   "tags": [
     "Process Engineering",
@@ -322,7 +329,10 @@ export const projects: Project[] = [
     "Hydrodesulfurization (HDS)",
     "Process Control",
     "Safety Systems",
-    "PRO/II"
+    "PRO/II",
+    "Plant Layout",
+    "EPC Engineering",
+    "Modular Design"
   ],
   "image": "/projects/hds-unit.png",
   "githubUrl": "",
@@ -334,6 +344,56 @@ export const projects: Project[] = [
     "Emergency Shutdown Diagram (ESD) and Cause & Effect chart",
     "Material Selection Diagram (MSD) based on temperature and corrosion",
     "Line sizing and equipment design calculations following industry standards"
+  ],
+  "keyEngineeringContributions": [
+    {
+      "title": "Plant Layout & Piping",
+      "points": [
+        "Developed the overall plot plan considering prevailing winds, safety distances, flare radiation zones, and constructability",
+        "Designed HDS modular layout integrating stick-built units, pipe racks, and transportable modules",
+        "Created 3D piping and equipment layouts ensuring NPSH compliance, maintenance accessibility, and PSV drainage"
+      ]
+    },
+    {
+      "title": "Materials & Corrosion Engineering",
+      "points": [
+        "Defined material selection philosophy for a coastal industrial C4 corrosive environment",
+        "Evaluated external corrosion, CUI, and SCC risks based on operating conditions",
+        "Selected materials and corrosion allowances using HMB-derived process data"
+      ]
+    },
+    {
+      "title": "Electrical & Instrumentation",
+      "points": [
+        "Designed single-line electrical distribution from 66 kV grid down to LV systems",
+        "Sized transformers, switchgear, and power cables based on load lists and voltage-drop criteria",
+        "Redesigned ICSS-based control room, including Smart Junction Boxes, cabinet optimization, and heat dissipation calculations"
+      ]
+    },
+    {
+      "title": "Equipment Engineering",
+      "points": [
+        "Reviewed vendor General Arrangement Drawings (GADs) for installation, maintenance, and interface completeness",
+        "Performed technical bid evaluation and clarification for equipment packages (cooling tower, air dryer)"
+      ]
+    },
+    {
+      "title": "Weight Control & Transport",
+      "points": [
+        "Calculated module weight and center of gravity for transport, dry-in-place, and operating conditions",
+        "Designed SPMT transport configuration, including dynamic loads, CoG uncertainty, and stability checks",
+        "Selected suitable barge transport solution based on geometry and weight constraints"
+      ]
+    },
+    {
+      "title": "Structural & Foundations",
+      "points": [
+        "Performed beam stress analysis and section sizing under SPMT load cases",
+        "Estimated structural steel weight for primary framing",
+        "Compared shallow vs pile foundations considering soft soil, seismic loads, settlement, and cost",
+        "Selected pile foundation solution based on ULS/SLS checks and economic evaluation"
+      ]
+    }
   ],
   "keyAchievements": [
     "Achieved 99.67% desulfurization meeting <50 ppm sulfur spec",
@@ -349,7 +409,7 @@ export const projects: Project[] = [
   "title": "Dynamic Simulation of a Binary Distillation Column",
   "description": "Dynamic modeling and simulation of a binary distillation column using Python, including stage-wise mass balances, VLE relations, and numerical solution of ODE/DAE systems.",
   "longDescription": "Developed a dynamic simulator for a binary distillation column using Python, reproducing the fundamental behavior industrial distillation  through stage-wise mass balances and vapor–liquid equilibrium (VLE) relationships. The model simulates transient evolution of liquid and vapor compositions along the column and explores the effect of relative volatility, reflux, and feed conditions. Advanced numerical methods were applied to solve stiff ordinary differential equations (ODEs) and differential–algebraic equations (DAEs) when temperature-dependent vapor pressure relations were introduced. The project bridges first-principles process modeling and numerical computation, similar in philosophy to commercial simulators.",
-  "category": "Process Simulation & Computational Modeling",
+  "category": " Computational Modeling",
   "date": "2024",
   "technologies": [
     "Python",

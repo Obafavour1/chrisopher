@@ -84,8 +84,9 @@ export default function ProjectDetail({ params }: { params: Promise<{ id: string
 
           <div className="flex flex-col gap-2">
             <span className="text-xs uppercase tracking-widest text-gray-400 font-bold flex items-center gap-2 text-right md:text-left">
-              <Github size={14} className="text-emerald-500" />
-              Repository
+              {project.githubUrl ? <Github size={16} /> : <FolderOpen size={16} />}
+              {/* Repository */}
+              {project.githubUrl ? "Repository" : "Folder"}
             </span>
             <a
               href={project.githubUrl || project.folder}

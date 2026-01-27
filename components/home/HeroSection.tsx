@@ -6,12 +6,12 @@ import Link from 'next/link';
 
 const HeroSection = () => {
   return (
-    <section  className="relative flex  bg-gradient-to-br from-[#1a2332] via-[#1e2a3a] to-[#243447] overflow-hidden">
+    <section  className="relative   bg-gradient-to-br from-[#1a2332] via-[#1e2a3a] to-[#243447] overflow-hidden">
       {/* Background Pattern/Overlay */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(56,189,248,0.05),transparent_50%)]"></div>
       
-      <div className="relative z-10  px-4 sm:px-6 lg:px-32 py-20 sm:py-36">
-        <div className="">
+      <div className="relative z-10 flex justify-between max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-36">
+        <div className="w-full flex flex-col items-start justify-start">
           {/* Welcome Badge */}
           <div className="inline-flex items-center px-4 py-2 rounded-full bg-teal-500/20 border border-teal-400/30 backdrop-blur-sm mb-6 sm:mb-8">
             <span className="text-teal-300 text-xs sm:text-sm font-medium">
@@ -78,6 +78,8 @@ const HeroSection = () => {
             </Link>
           </div>
         </div>
+
+        <div className='h-20 w-20'></div>
       </div>
 
       {/* Decorative Elements */}

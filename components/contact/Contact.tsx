@@ -1,7 +1,7 @@
 "use client"
 
 import React from 'react';
-import { Mail, Phone, MapPin, Github, Linkedin, Send } from 'lucide-react';
+import { Mail, MapPin, Github, Linkedin, Send } from 'lucide-react';
 import Link from 'next/link';
 
 const Contact = () => {
@@ -89,7 +89,7 @@ const Contact = () => {
                   </div>
 
                   {/* Phone */}
-                  <div className="flex items-start space-x-4">
+                  {/* <div className="flex items-start space-x-4">
                     <div className="mt-1">
                       <Phone className="w-5 h-5 text-teal-500" />
                     </div>
@@ -97,7 +97,7 @@ const Contact = () => {
                       <p className="text-sm font-semibold text-gray-900">Phone</p>
                       <p className="text-gray-600">+234 9152055481</p>
                     </div>
-                  </div>
+                  </div> */}
 
                   {/* Location */}
                   <div className="flex items-start space-x-4">
@@ -106,7 +106,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <p className="text-sm font-semibold text-gray-900">Location</p>
-                      <p className="text-gray-600">Paris, France</p>
+                      <p className="text-gray-600">Lyon, France</p>
                     </div>
                   </div>
                 </div>

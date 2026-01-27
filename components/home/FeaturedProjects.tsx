@@ -64,7 +64,7 @@ const FeaturedProjects = () => {
 
                 {/* Tags */}
                 <div className="flex flex-wrap gap-2 mb-6">
-                  {project.technologies.slice(0, 3).map((tech, index) => (
+                  {project.tags.slice(0, 3).map((tech, index) => (
                     <span 
                       key={index}
                       className="px-3 py-1 bg-gray-100 text-gray-700 text-xs font-medium rounded-full"
@@ -72,9 +72,9 @@ const FeaturedProjects = () => {
                       {tech}
                     </span>
                   ))}
-                  {project.technologies.length > 3 && (
+                  {project.tags.length > 3 && (
                     <span className="px-3 py-1 bg-gray-50 text-gray-400 text-xs font-medium rounded-full">
-                      +{project.technologies.length - 3}
+                      +{project.tags.length - 3}
                     </span>
                   )}
                 </div>

@@ -4,7 +4,7 @@ import React from 'react';
 
 interface Skill {
   name: string;
-  level: 'Expert' | 'Advanced';
+  level?: 'Expert' | 'Advanced' | "";
   percentage: number;
   color: string;
 }
@@ -16,21 +16,22 @@ interface SkillCategory {
 
 const skillsData: SkillCategory[] = [
   {
-    title: "Programming Languages",
+    title: "Programming & Computational Engineering",
     skills: [
-      { name: "Python", level: "Expert", percentage: 90, color: "bg-teal-500" },
-      { name: "MATLAB", level: "Expert", percentage: 90, color: "bg-teal-500" },
-      { name: "JavaScript", level: "Expert", percentage: 85, color: "bg-teal-500" },
-      { name: "SQL", level: "Expert", percentage: 80, color: "bg-teal-500" }
+      { name: "Python (Engineering calculations, modeling, data analysis)", level: "", percentage: 90, color: "bg-teal-500" },
+      { name: "MATLAB (Simulation, optimization, numerical methods)", level: "", percentage: 90, color: "bg-teal-500" },
+      { name: "Simulink (Dynamic system modeling)", level: "", percentage: 85, color: "bg-teal-500" },
+      
     ]
   },
   {
-    title: "Engineering Tools",
+    title: "Process & Engineering Tools",
     skills: [
-      { name: "Aspen Plus", level: "Advanced", percentage: 85, color: "bg-teal-500" },
-      { name: "HYSYS", level: "Advanced", percentage: 85, color: "bg-teal-500" },
-      { name: "Process Optimization", level: "Advanced", percentage: 90, color: "bg-teal-500" },
-      { name: "Data Analysis", level: "Advanced", percentage: 88, color: "bg-teal-500" }
+      { name: "PRO/II (Refinery and petrochemical process simulation)", level: "", percentage: 88, color: "bg-teal-500" },
+      { name: "Aspen HYSYS (Hydrocarbon and energy system modeling)", level: "", percentage: 85, color: "bg-teal-500" },
+      { name: "Process design, optimization, and unit operations", level: "", percentage: 90, color: "bg-teal-500" },
+      { name: "PFD & P&ID development", level: "", percentage: 88, color: "bg-teal-500" },
+      { name: "Life Cycle Assessment - SimaPro", level: "", percentage: 88, color: "bg-teal-500" }
     ]
   }
 ];
