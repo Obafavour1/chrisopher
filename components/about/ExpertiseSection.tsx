@@ -34,7 +34,7 @@ const ExpertiseSection = () => {
 
   return (
     <section className="bg-white px-6 md:px-12 lg:px-24 py-16 pb-24">
-      <div className="max-w-5xl mx-auto">
+      <div className="max-w-5xl mx-auto ">
         {/* Certifications */}
         {/* <div className="mb-20">
           <div className="flex items-center gap-3 mb-10">
@@ -60,14 +60,14 @@ const ExpertiseSection = () => {
         <div className="mb-24">
           <h2 className="text-3xl font-bold text-[#0f172a] mb-12">Technical Expertise</h2>
           
-          <div className="grid gap-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 
             {/* Chemical Engineering Skills */}
-            <div>
+            <div className="bg-white rounded-xl p-6 border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
               <h3 className="text-xl font-bold text-[#0f172a] mb-6">Process & Chemical Engineering</h3>
-              <ul className="space-y-4">
+              <ul className="space-y-4 ">
                 {chemicalEngineering.map((skill, index) => (
-                  <li key={index} className="flex items-center gap-3 text-slate-500">
+                  <li key={index} className="flex items-center gap-3 text-slate-500  ">
                     <Check className="w-5 h-5 text-[#0d9488]" />
                     <span>{skill}</span>
                   </li>
@@ -77,7 +77,7 @@ const ExpertiseSection = () => {
 
 
             {/* Data Engineering Skills */}
-            <div>
+            <div className="bg-white rounded-xl p-6 border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
               <h3 className="text-xl font-bold text-[#0f172a] mb-6">Computational & Data Engineering</h3>
               <ul className="space-y-4">
                 {dataEngineering.map((skill, index) => (
@@ -90,7 +90,7 @@ const ExpertiseSection = () => {
             </div>
 
             {/* Data Tools Skills */}
-            <div>
+            <div className="bg-white rounded-xl p-6 border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
               <h3 className="text-xl font-bold text-[#0f172a] mb-6">Engineering Design & Tools</h3>
               <ul className="space-y-4">
                 {designTools.map((skill, index) => (
@@ -103,7 +103,7 @@ const ExpertiseSection = () => {
             </div>
 
             {/* Soft Skills */}
-            <div>
+            <div className="bg-white rounded-xl p-6 border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
               <h3 className="text-xl font-bold text-[#0f172a] mb-6">Soft Skills</h3>
               <ul className="space-y-4">
                 {softSkills.map((skill, index) => (
