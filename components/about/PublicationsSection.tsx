@@ -30,7 +30,7 @@ const PublicationsSection = () => {
   ];
 
   return (
-    <section className="bg-slate-50 px-6 md:px-12 lg:px-24 py-20">
+    <section id="publications" className="bg-slate-50 px-6 md:px-12 lg:px-24 py-20">
       <div className="max-w-5xl mx-auto">
         <div className="flex items-center gap-3 mb-12">
           <div className="p-2 bg-white rounded-lg shadow-sm">

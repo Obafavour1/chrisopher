@@ -1,6 +1,6 @@
 "use client";
 
-import React, { use } from 'react';
+import  { use } from 'react';
 import { projects } from '@/constants/projects';
 import { 
   ArrowLeft, 

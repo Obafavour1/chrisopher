@@ -26,12 +26,12 @@ const Navbar = () => {
             <div className={`w-8 h-8 sm:w-10 sm:h-10 rounded-lg flex items-center justify-center transition-colors ${
               scrolled || isOpen ? 'bg-teal-500' : 'bg-teal-400'
             }`}>
-              <span className="text-white font-bold text-lg sm:text-xl">C</span>
+              <span className="text-white font-bold text-lg sm:text-xl">A</span>
             </div>
             <span className={`font-semibold text-base sm:text-lg transition-colors ${
               scrolled || isOpen ? 'text-gray-900' : 'text-white'
             }`}>
-              Christopher
+              ABUGA
             </span>
           </Link>
 

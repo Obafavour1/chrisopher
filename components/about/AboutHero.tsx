@@ -14,7 +14,7 @@ const AboutHero = () => {
             Process Engineer in training with hands-on experience in process simulation, process design, and polymerization research driven by practical engineering and sustainable technologies.
           </p>
           <Link
-          href="#"
+          href="https://drive.google.com/drive/folders/1FFnhHQLHjJQ6i25gyZMJD_5FUVD8j-Mm?usp=sharing"
           className="inline-flex mt-5 items-center justify-center px-6 sm:px-8 py-3 sm:py-4 bg-teal-500 hover:bg-teal-600 text-white font-semibold rounded-lg transition-all duration-300 transform hover:scale-101 shadow-md hover:shadow-teal-500/50"
         >
           Resume

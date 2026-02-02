@@ -18,13 +18,13 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Chris | Chemical Engineer & Automation Specialist",
-    template: "%s | Chris Portfolio"
+    default: "ABUGA | Chemical Engineer & Automation Specialist",
+    template: "%s | ABUGA Portfolio"
   },
-  description: "Professional portfolio of Chris, a Chemical Engineer and Developer specializing in process simulation, optimization, and automation using Python and MATLAB.",
+  description: "Professional portfolio of ABUGA, a Chemical Engineer and Developer specializing in process simulation, optimization, and automation using Python and MATLAB.",
   keywords: ["Chemical Engineer", "Process Automation", "Python", "MATLAB", "Process Simulation", "Engineering optimization", "Computational Problem Solving"],
-  authors: [{ name: "Chris" }],
-  creator: "Chris",
+  authors: [{ name: "ABUGA" }],
+  creator: "ABUGA",
 };
 
 export default function RootLayout({
