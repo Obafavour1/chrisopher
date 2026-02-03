@@ -2,6 +2,7 @@
 
 import  { useState, useEffect } from 'react';
 import Link from 'next/link';
+import LanguageToggle from '../languageTranslate/LanguageToggle';
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -48,6 +49,7 @@ const Navbar = () => {
                 {item}
               </Link>
             ))}
+            <LanguageToggle scrolled={scrolled} isOpen={isOpen} />
           </div>
 
           {/* Mobile Menu Button */}
@@ -86,6 +88,9 @@ const Navbar = () => {
               {item}
             </Link>
           ))}
+          <div className="px-3 py-2">
+            <LanguageToggle scrolled={true} isOpen={isOpen} />
+          </div>
         </div>
       </div>
     </nav>

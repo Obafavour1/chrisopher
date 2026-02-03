@@ -1,20 +1,20 @@
 "use client"
 
 
-import { ArrowBigRight, Github, Linkedin, Mail, ShieldCheck, Smile, Zap, Activity } from 'lucide-react';
+import { Github, Linkedin, Mail, ShieldCheck, Smile, Zap, Activity } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 import {motion} from 'framer-motion';
 
 const HeroSection = () => {
   return (
-    <section  className="relative min-h-screen flex items-center bg-gradient-to-br from-[#1a2332] via-[#1e2a3a] to-[#243447] overflow-hidden">
+    <section  className="relative min-h-[400px] pt-20 pb-10  bg-gradient-to-br from-[#1a2332] via-[#1e2a3a] to-[#243447] overflow-hidden">
       {/* Background Pattern/Overlay */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(56,189,248,0.05),transparent_50%)]"></div>
       
-      <div className="relative z-10 flex flex-col lg:flex-row items-center justify-between max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-0 gap-16 lg:gap-8">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10 flex justify-between items-center">
         {/* Left Content Section */}
-        <div className="w-full lg:w-1/2 flex flex-col items-center lg:items-start text-center lg:text-left">
+        <div className="w-full">
           {/* Welcome Badge */}
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
@@ -27,7 +27,7 @@ const HeroSection = () => {
           </motion.div>
 
           {/* Main Heading */}
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-4 sm:mb-6 leading-[1.1]">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl  font-bold text-white mb-4 sm:mb-6 leading-[1.1]">
             Chemical Engineer |
             <br />
             <span className="text-teal-400">Process & Energy</span>
@@ -59,9 +59,11 @@ const HeroSection = () => {
 
           <Link 
             href="/about#publications"
-            className="flex items-center gap-2 text-teal-400 font-semibold hover:text-teal-300 transition-colors mb-12"
+            className="flex items-center gap-2 text-teal-400 font-semibold hover:text-teal-300 transition-colors mb-6"
           >
-            See publications <ArrowBigRight className='w-5 h-5'/>
+            See publications <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
           </Link>
 
           {/* Social Links */}
@@ -85,7 +87,7 @@ const HeroSection = () => {
         </div>
 
         {/* Right Image Section */}
-        <div className="w-full lg:w-1/2 flex justify-center items-center">
+        <div className="hidden w-full md:flex justify-center items-center">
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
