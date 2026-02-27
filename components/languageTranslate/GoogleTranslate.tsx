@@ -52,7 +52,8 @@ export default function GoogleTranslate() {
   return (
     <div
       id="google_translate_element"
-      style={{ visibility: "hidden", position: "absolute", top: "-9999px" }}
+      style={{ display: "none" }}
     />
   );
 }
+
