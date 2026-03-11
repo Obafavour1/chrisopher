@@ -443,62 +443,20 @@ export const projects: Project[] = [
   },
 ];
 
-// <motion.div
-//             initial={{ opacity: 0, scale: 0.9 }}
-//             animate={{ opacity: 1, scale: 1 }}
-//             transition={{ duration: 0.8, delay: 0.2 }}
-//             className="relative w-full max-w-[450px] aspect-[4/5] sm:aspect-square"
-//           >
-//             {/* Decorative Background Glow */}
-//             <div className="absolute -inset-4 bg-gradient-to-r from-teal-500/20 to-blue-500/20 rounded-[2.5rem] blur-3xl opacity-50 group-hover:opacity-75 transition-opacity duration-500"></div>
-
-//             {/* Main Image Container */}
-//             <div className="relative h-full w-full rounded-[2rem] overflow-hidden border border-white/10 shadow-2xl z-10 group">
-//               <Image
-//                 src="/hero-image.jpg"
-//                 alt="Engineering Facility"
-//                 fill
-//                 className="object-cover transition-transform duration-700 group-hover:scale-105"
-//                 priority
-//               />
-//               <div className="absolute inset-0 bg-gradient-to-t from-[#0f172a] via-transparent to-transparent opacity-60"></div>
-
-//               {/* Overlay Grid */}
-//               <div className="absolute inset-0 bg-[radial-gradient(#ffffff10_1px,transparent_1px)] [background-size:20px_20px] opacity-30"></div>
-//             </div>
-
-//             {/* Floating Glass Badges - Adjusted for mobile */}
-//             <motion.div
-//               animate={{ y: [0, -10, 0] }}
-//               transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-//               className="absolute -top-4 -right-4 sm:-top-8 sm:-right-8 bg-slate-900/90 backdrop-blur-xl border border-white/10 p-3 sm:p-4 rounded-2xl shadow-2xl z-20 flex items-center gap-3 sm:gap-4"
-//             >
-//               <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-teal-400 to-emerald-500 rounded-xl flex items-center justify-center shadow-lg">
-//                 <Activity className="text-slate-900 w-5 h-5 sm:w-6 sm:h-6" />
-//               </div>
-//               <div>
-//                 <p className="text-white text-xs sm:text-sm font-bold">Process Design</p>
-//                 <p className="text-teal-400 text-[8px] sm:text-[10px] font-semibold uppercase tracking-wider">Optimization</p>
-//               </div>
-//             </motion.div>
-
-//             <motion.div
-//               animate={{ y: [0, 10, 0] }}
-//               transition={{ duration: 3.5, repeat: Infinity, ease: "easeInOut", delay: 1 }}
-//               className="absolute -bottom-4 -left-4 sm:-bottom-8 sm:-left-8 bg-slate-900/90 backdrop-blur-xl border border-white/10 p-3 sm:p-4 rounded-2xl shadow-2xl z-20 flex items-center gap-3 sm:gap-4"
-//             >
-//               <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-blue-400 to-indigo-500 rounded-xl flex items-center justify-center shadow-lg">
-//                 <Zap className="text-white w-5 h-5 sm:w-6 sm:h-6" />
-//               </div>
-//               <div>
-//                 <p className="text-white text-xs sm:text-sm font-bold">Energy Systems</p>
-//                 <p className="text-blue-400 text-[8px] sm:text-[10px] font-semibold uppercase tracking-wider">efficiency</p>
-//               </div>
-//             </motion.div>
-
-//             {/* Technical Badge */}
-//             <div className="absolute bottom-6 right-6 sm:bottom-12 sm:right-8 bg-teal-500/20 backdrop-blur-md border border-teal-500/30 px-3 py-1.5 rounded-full z-20 flex items-center gap-2">
-//               <ShieldCheck className="w-3 h-3 sm:w-4 sm:h-4 text-teal-400" />
-//               <span className="text-teal-100 text-[8px] sm:text-[10px] font-bold uppercase tracking-widest">Certified Engineer</span>
-//             </div>
-//           </motion.div>
+// <div
+//           className="hidden w-full md:flex justify-center items-center [perspective:1000px]"
+//           style={{ isolation: "isolate" }}
+//         >
+//           <video
+//             src="/darkv.mp4"
+//             autoPlay
+//             loop
+//             muted
+//             playsInline
+//             className="animate-rotateSide object-contain"
+//             style={{
+//               backgroundColor: "transparent",
+//               mixBlendMode: "screen",
+//             }}
+//           />
+//         </div>
