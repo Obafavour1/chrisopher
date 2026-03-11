@@ -19,7 +19,7 @@ const HeroSection = () => {
       {/* Background Pattern/Overlay */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(56,189,248,0.05),transparent_50%)]"></div>
 
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10 flex justify-between items-center">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10 flex max-md:flex-col justify-between items-center">
         {/* Left Content Section */}
         <div className="w-full">
           {/* Welcome Badge */}
@@ -134,7 +134,7 @@ const HeroSection = () => {
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="relative w-full max-w-[450px] aspect-[4/5] sm:aspect-square"
+          className="relative w-full hidden md:flex max-w-[450px] aspect-[4/5] sm:aspect-square"
         >
           {/* Decorative Background Glow */}
           <div className="absolute -inset-4 bg-gradient-to-r from-teal-500/20 to-blue-500/20 rounded-[2.5rem] blur-3xl opacity-50 group-hover:opacity-75 transition-opacity duration-500"></div>
