@@ -425,7 +425,7 @@ export const projects: Project[] = [
       "Python",
     ],
     image: "/projects/dynamic-distillation.png",
-    githubUrl: "https://github.com/ChrisAbuga/Distillation-Project.git",
+    githubUrl: "https://github.com/E-Abuga/Distillation-Project.git",
     keyFeatures: [
       "Dynamic stage-by-stage mass balance model for a binary distillation column",
       "VLE modeling using relative volatility and Raoult’s law",

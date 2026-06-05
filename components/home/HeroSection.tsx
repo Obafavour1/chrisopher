@@ -102,7 +102,7 @@ const HeroSection = () => {
             {[
               {
                 icon: Github,
-                href: "https://github.com/ChrisAbuga",
+                href: "https://github.com/E-Abuga",
                 label: "GitHub",
               },
               {

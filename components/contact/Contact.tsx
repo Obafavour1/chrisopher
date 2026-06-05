@@ -116,7 +116,7 @@ const Contact = () => {
                 <h3 className="text-xl font-bold text-gray-900 mb-6">Connect With Me</h3>
                 <div className="flex space-x-4">
                   <Link 
-                    href="https://github.com/ChrisAbuga" 
+                    href="https://github.com/E-Abuga" 
                     target="_blank"
                     className="w-12 h-12 flex items-center justify-center rounded-lg border border-gray-200 bg-gray-50 hover:bg-gray-100 transition-colors"
                   >
