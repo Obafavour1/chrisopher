@@ -7,7 +7,7 @@ const ExperienceSection = () => {
     {
       title: "Process Engineer Research Intern",
       company: "CP2M Lyon",
-      period: "Oct. 2025 - Present",
+      period: "Oct. 2025 - Apr. 2026",
       bullets: [
         "Investigating catalyst breakup during high-pressure ethylene polymerization using Ziegler-Natta and metallocene catalysts",
         "Conducting gas and slurry phase polymerization; analyzing polymer morphology with SEM, DSC, NMR, and HT-SEC",
